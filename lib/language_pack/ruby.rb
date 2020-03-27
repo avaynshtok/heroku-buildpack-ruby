@@ -1245,6 +1245,8 @@ MESSAGE
 
   def load_bundler_cache
     instrument "ruby.load_bundler_cache" do
+      puts "Loading bundler cache"
+
       cache.load "vendor"
 
       full_ruby_version       = run_stdout(%q(ruby -v)).chomp
