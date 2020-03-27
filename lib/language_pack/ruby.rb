@@ -1138,7 +1138,7 @@ params = CGI.parse(uri.query || "")
       topic "Precompiling assets"
       precompile.invoke(env: rake_env)
       if precompile.success?
-        puts "Asset precompilation completed (#{"%.2f" % precompile.time}s)"
+        puts "Asset blah blah blah precompilation completed (#{"%.2f" % precompile.time}s)"
       else
         precompile_fail(precompile.output)
       end
